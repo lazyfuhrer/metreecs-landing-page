@@ -51,6 +51,10 @@ export function CaseStudies() {
           <div 
             ref={carouselRef} 
             className="flex overflow-x-auto space-x-6 pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide"
+            style={{
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+            }}
           >
             {caseStudies.map((study, index) => (
               <motion.div 

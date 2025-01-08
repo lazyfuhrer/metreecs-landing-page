@@ -1,7 +1,7 @@
 'use client'
 
-import { motion } from "motion/react"
 import { Card, CardContent } from "@/components/ui/card"
+import { ScrollAnimation } from './scroll-animation'
 
 const impacts = [
   {
@@ -33,22 +33,14 @@ export function MeasurableImpacts() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f8fafb]">
       <div className="container mx-auto max-w-7xl">
-        <motion.h2 
-          className="text-3xl sm:text-4xl font-bold text-[#0e161b] mb-8 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Measurable impacts
-        </motion.h2>
+        <ScrollAnimation>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0e161b] mb-8 text-center">
+            Measurable impacts
+          </h2>
+        </ScrollAnimation>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {impacts.map((impact, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
+            <ScrollAnimation key={index}>
               <Card className="border-[#d1dde6] hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold text-[#0e161b] mb-2">{impact.title}</h3>
@@ -60,11 +52,10 @@ export function MeasurableImpacts() {
                   )}
                 </CardContent>
               </Card>
-            </motion.div>
+            </ScrollAnimation>
           ))}
         </div>
       </div>
     </section>
   )
 }
-

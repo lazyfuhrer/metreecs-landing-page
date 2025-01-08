@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { ScrollAnimation } from './scroll-animation'
 
 const faqItems = [
   {
@@ -31,22 +32,14 @@ export function FAQ() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f8fafb]">
       <div className="container mx-auto max-w-3xl">
-        <motion.h2 
-          className="text-3xl sm:text-4xl font-bold text-[#0e161b] mb-8 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Frequently Asked Questions
-        </motion.h2>
+        <ScrollAnimation>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0e161b] mb-8 text-center">
+            Frequently Asked Questions
+          </h2>
+        </ScrollAnimation>
         <Accordion type="single" collapsible className="w-full">
           {faqItems.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
+            <ScrollAnimation key={index}>
               <AccordionItem value={`item-${index}`}>
                 <AccordionTrigger className="text-left text-lg font-semibold text-[#0e161b] hover:text-[#1d8cd7]">
                   {item.question}
@@ -64,10 +57,11 @@ export function FAQ() {
                   </AccordionContent>
                 </AnimatePresence>
               </AccordionItem>
-            </motion.div>
+            </ScrollAnimation>
           ))}
         </Accordion>
       </div>
     </section>
   )
 }
+
