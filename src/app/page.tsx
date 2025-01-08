@@ -5,8 +5,8 @@ import { KeyBenefits } from "@/components/key-benifits";
 import { LatestBlogs } from "@/components/latest-blogs";
 import { MeasurableImpacts } from "@/components/measurable-impacts";
 import { UnlockPower } from "@/components/unlock-power";
-import { FAQ } from "@/components/ui/faq";
-import { Footer } from "@/components/ui/footer";
+import { FAQ } from "@/components/faq";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (

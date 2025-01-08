@@ -3,6 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
+import { motion } from "motion/react"
 
 import { Button } from '@/components/ui/button'
 import {
@@ -24,7 +25,12 @@ export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <nav className="border-b">
+    <motion.nav 
+      className="border-b bg-white sticky top-0 z-50"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="flex items-center justify-between p-4 md:px-8">
         <Link href="/" className="text-xl font-bold">
           Logo
@@ -92,7 +98,7 @@ export function Navbar() {
           </SheetContent>
         </Sheet>
       </div>
-    </nav>
+    </motion.nav>
   )
 }
 

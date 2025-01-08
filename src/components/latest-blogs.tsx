@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from "motion/react"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent } from "@/components/ui/card"
@@ -22,30 +25,44 @@ const blogPosts = [
 
 export function LatestBlogs() {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#f8fafb]">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f8fafb]">
       <div className="container mx-auto max-w-7xl">
-        <h2 className="text-2xl font-bold text-[#0e161b] mb-6">Latest Blogs</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.h2 
+          className="text-3xl sm:text-4xl font-bold text-[#0e161b] mb-8 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Latest Blogs
+        </motion.h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <Card key={index} className="w-full border-[#d1dde6] overflow-hidden">
-              <Link href={post.link}>
-                <CardContent className="p-0">
-                  <div className="relative aspect-video">
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      layout="fill"
-                      objectFit="cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-medium text-[#0e161b] hover:text-[#1d8cd7] transition-colors">
-                      {post.title}
-                    </h3>
-                  </div>
-                </CardContent>
-              </Link>
-            </Card>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Card className="w-full border-[#d1dde6] overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <Link href={post.link}>
+                  <CardContent className="p-0">
+                    <div className="relative aspect-video">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold text-[#0e161b] hover:text-[#1d8cd7] transition-colors duration-300">
+                        {post.title}
+                      </h3>
+                    </div>
+                  </CardContent>
+                </Link>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
