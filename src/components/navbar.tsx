@@ -3,7 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
-import { motion, useScroll, useTransform } from "motion/react"
+import { motion, useScroll, useTransform } from 'motion/react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -51,14 +51,14 @@ export function Navbar() {
 
   return (
     <motion.nav 
-      className="fixed top-0 left-0 right-0 z-50"
+      className="fixed top-0 left-0 right-0 z-50 py-4"
       style={{ backgroundColor }}
       initial="hidden"
       animate="visible"
       variants={navVariants}
     >
-      <div className="container mx-auto max-w-7xl">
-        <div className="flex items-center justify-between p-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
           <motion.div variants={itemVariants}>
             <Link href="/" className="text-xl font-bold text-[#1a365d]">
               Logo
