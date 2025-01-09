@@ -28,7 +28,7 @@ export function Hero() {
                 AI-Powered Demand Forecasting for Smarter Retail
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-[#2563eb] mb-6">
-                Optimize inventory, reduce waste, and boost profits with Metreecs cutting-edge AI technology.
+                Optimize inventory, reduce waste, and boost profits with Metreecs&apos; cutting-edge AI technology.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button 
