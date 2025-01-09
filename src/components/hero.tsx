@@ -17,47 +17,47 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow flex items-center">
+      <div className="flex-grow flex items-center pt-20 sm:pt-5 md:pt-5">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-center md:gap-12">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-12 my-8 sm:my-12 md:my-16">
             <motion.div 
               className="w-full md:w-1/2 mb-8 md:mb-0"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -50 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-              <h1 className="text-4xl sm:text-5xl font-black leading-tight tracking-tight text-[#1a365d] mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight text-[#1a365d] mb-4">
                 AI-Powered Demand Forecasting for Retailers
               </h1>
-              <p className="text-lg sm:text-xl text-[#2563eb] mb-6">
+              <p className="text-base sm:text-lg md:text-xl text-[#2563eb] mb-6">
                 Prevent overstock and out-of-stock situations, eliminate waste, and free up capital with Petrecs cutting-edge AI technology.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button 
-                  className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold py-3 px-6 rounded-xl text-base sm:text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+                  className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-xl text-sm sm:text-base md:text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
                 >
                   Get Started
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
                 <Button 
                   variant="outline" 
-                  className="bg-transparent text-[#2563eb] hover:bg-[#2563eb]/10 border-[#2563eb] font-bold py-3 px-6 rounded-xl text-base sm:text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+                  className="bg-transparent text-[#2563eb] hover:bg-[#2563eb]/10 border-[#2563eb] font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-xl text-sm sm:text-base md:text-lg transition-all duration-300 ease-in-out transform hover:scale-105"
                 >
                   Request a demo
                 </Button>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center">
-                  <BarChart2 className="text-[#2563eb] mr-2" />
-                  <span className="text-[#1a365d] font-semibold">99% Accuracy</span>
+                  <BarChart2 className="text-[#2563eb] mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-[#1a365d] font-semibold text-sm sm:text-base">99% Accuracy</span>
                 </div>
                 <div className="flex items-center">
-                  <TrendingUp className="text-[#2563eb] mr-2" />
-                  <span className="text-[#1a365d] font-semibold">20% Revenue Increase</span>
+                  <TrendingUp className="text-[#2563eb] mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-[#1a365d] font-semibold text-sm sm:text-base">20% Revenue Increase</span>
                 </div>
                 <div className="flex items-center">
-                  <ShoppingCart className="text-[#2563eb] mr-2" />
-                  <span className="text-[#1a365d] font-semibold">30% Less Overstock</span>
+                  <ShoppingCart className="text-[#2563eb] mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-[#1a365d] font-semibold text-sm sm:text-base">30% Less Overstock</span>
                 </div>
               </div>
             </motion.div>
@@ -78,8 +78,8 @@ export function Hero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 bg-white/90 p-4 rounded-xl">
-                  <h3 className="text-[#1a365d] font-bold mb-2">Real-time Insights</h3>
-                  <p className="text-[#2563eb] text-sm">Our AI analyzes market trends, historical data, and external factors to provide accurate demand forecasts.</p>
+                  <h3 className="text-[#1a365d] font-bold mb-2 text-sm sm:text-base">Real-time Insights</h3>
+                  <p className="text-[#2563eb] text-xs sm:text-sm">Our AI analyzes market trends, historical data, and external factors to provide accurate demand forecasts.</p>
                 </div>
               </div>
             </motion.div>
@@ -89,4 +89,3 @@ export function Hero() {
     </section>
   )
 }
-
