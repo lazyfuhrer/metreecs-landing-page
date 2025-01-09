@@ -77,7 +77,7 @@ export function Hero() {
             >
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="https://cdn.usegalileo.ai/sdxl10/f07acbcc-941f-4d28-adef-22e9f5e9cf09.png"
+                  src="/images/hero-store.svg"
                   alt="Demand Forecasting Illustration"
                   layout="fill"
                   objectFit="cover"
