@@ -47,10 +47,10 @@ export function Footer() {
         </div>
         <div className="text-center text-[#1a365d] text-sm">
           <p className="mb-4">
-            Petrecs is a leading provider of AI-powered demand forecasting solutions. We are committed to environmental and social responsibility, and hold certifications in data privacy and security.
+            Metreecs is a leading provider of AI-powered demand forecasting solutions. We are committed to environmental and social responsibility, and hold certifications in data privacy and security.
           </p>
           <p>
-            © {new Date().getFullYear()} Petrecs. All rights reserved.
+            © {new Date().getFullYear()} Metreecs. All rights reserved.
           </p>
         </div>
       </div>

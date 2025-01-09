@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import Image from 'next/image'
 
 const navigationItems = [
   { title: 'Product', href: '/product' },
@@ -61,7 +62,7 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <motion.div variants={itemVariants}>
             <Link href="/" className="text-xl font-bold text-[#1a365d]">
-              Logo
+              <Image src="/images/logo.png" alt="Logo" width={50} height={25} />
             </Link>
           </motion.div>
           <div className="hidden md:flex items-center space-x-4">

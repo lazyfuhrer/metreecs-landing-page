@@ -10,17 +10,17 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 const caseStudies = [
   {
     title: "Retailer A: 20% increase in efficiency",
-    description: "Download the detailed report to learn how Retailer A achieved a 20% increase in efficiency with Petrecs' demand forecasting solution.",
+    description: "Download the detailed report to learn how Retailer A achieved a 20% increase in efficiency with Metreecs' demand forecasting solution.",
     image: "https://cdn.usegalileo.ai/sdxl10/d84b8864-64bb-456b-bbea-1e0a377f91e9.png"
   },
   {
     title: "Retailer B: $500,000 capital savings",
-    description: "Download the detailed report to learn how Retailer B saved $500,000 in capital with Petrecs' demand forecasting solution.",
+    description: "Download the detailed report to learn how Retailer B saved $500,000 in capital with Metreecs' demand forecasting solution.",
     image: "https://cdn.usegalileo.ai/sdxl10/d8b8aa77-99b4-494a-bce3-b2d0860c95ee.png"
   },
   {
     title: "Retailer C: 15% reduction in waste",
-    description: "Download the detailed report to learn how Retailer C reduced waste by 15% with Petrecs' demand forecasting solution.",
+    description: "Download the detailed report to learn how Retailer C reduced waste by 15% with Metreecs' demand forecasting solution.",
     image: "https://cdn.usegalileo.ai/sdxl10/7df2a5cf-5b35-4846-801c-d3befa12471c.png"
   }
 ]

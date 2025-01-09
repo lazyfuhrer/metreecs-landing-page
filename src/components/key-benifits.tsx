@@ -34,7 +34,7 @@ export function KeyBenefits() {
           <div className="mb-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0e161b] mb-4">Key benefits</h2>
             <p className="text-lg text-[#507a95] max-w-3xl mx-auto">
-              Prevent overstock and out-of-stock situations, eliminate waste, and free up capital with Petrecs AI-powered demand forecasting.
+              Prevent overstock and out-of-stock situations, eliminate waste, and free up capital with Metreecs AI-powered demand forecasting.
             </p>
           </div>
         </ScrollAnimation>

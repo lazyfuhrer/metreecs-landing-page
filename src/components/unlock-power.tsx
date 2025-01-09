@@ -34,7 +34,7 @@ export function UnlockPower() {
         </ScrollAnimation>
         <ScrollAnimation>
           <p className="text-xl text-[#507a95] mb-10">
-            Get started with Petrecs today or request a demo to learn more about our demand forecasting capabilities.
+            Get started with Metreecs today or request a demo to learn more about our demand forecasting capabilities.
           </p>
         </ScrollAnimation>
         <ScrollAnimation>

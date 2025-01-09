@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Petrecs - AI-Powered Demand Forecasting',
-  description: 'Optimize your retail inventory with Petrecs AI-powered demand forecasting solution.',
+  title: 'Metreecs - AI-Powered Demand Forecasting',
+  description: 'Optimize your retail inventory with Metreecs AI-powered demand forecasting solution.',
 }
 
 export default function RootLayout({
