@@ -9,17 +9,17 @@ const blogPosts = [
   {
     title: "Optimizing Inventory Management",
     image: "https://cdn.usegalileo.ai/sdxl10/a1b6ed4e-d3f8-4259-8774-8496a13923bc.png",
-    link: "/blog/optimizing-inventory-management"
+    link: "/"
   },
   {
     title: "The Future of Retail: AI Insights",
     image: "https://cdn.usegalileo.ai/sdxl10/8638c3f9-85cb-4432-9b36-80af109f10b0.png",
-    link: "/blog/future-of-retail-ai-insights"
+    link: "/"
   },
   {
     title: "Sustainable Supply Chains",
     image: "https://cdn.usegalileo.ai/sdxl10/ea740823-983e-48b4-aef9-27d60f86e12e.png",
-    link: "/blog/sustainable-supply-chains"
+    link: "/"
   }
 ]
 

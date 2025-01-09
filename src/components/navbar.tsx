@@ -16,10 +16,10 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import Image from 'next/image'
 
 const navigationItems = [
-  { title: 'Product', href: '/product' },
-  { title: 'Solutions', href: '/solutions' },
-  { title: 'Company', href: '/company' },
-  { title: 'Resources', href: '/resources' },
+  { title: 'Product', href: '/' },
+  { title: 'Solutions', href: '/' },
+  { title: 'Company', href: '/' },
+  { title: 'Resources', href: '/' },
 ]
 
 const navVariants = {
@@ -88,12 +88,12 @@ export function Navbar() {
                 className="bg-transparent hover:bg-[#2563eb]/10 text-[#2563eb] border-[#2563eb]" 
                 asChild
               >
-                <Link href="/demo">Request a demo</Link>
+                <Link href="/">Request a demo</Link>
               </Button>
             </motion.div>
             <motion.div variants={itemVariants}>
               <Button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white" asChild>
-                <Link href="/start">Get Started</Link>
+                <Link href="/">Get Started</Link>
               </Button>
             </motion.div>
           </div>
@@ -121,12 +121,12 @@ export function Navbar() {
                   className="bg-transparent hover:bg-[#2563eb]/10 text-[#2563eb] border-[#2563eb] w-full" 
                   asChild
                 >
-                  <Link href="/demo" onClick={() => setIsOpen(false)}>
+                  <Link href="/" onClick={() => setIsOpen(false)}>
                     Request a demo
                   </Link>
                 </Button>
                 <Button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white w-full" asChild>
-                  <Link href="/start" onClick={() => setIsOpen(false)}>
+                  <Link href="/" onClick={() => setIsOpen(false)}>
                     Get Started
                   </Link>
                 </Button>

@@ -2,20 +2,20 @@ import Link from 'next/link'
 import { Facebook, Twitter, Linkedin } from 'lucide-react'
 
 const footerLinks = [
-  { name: "About Us", href: "/about" },
-  { name: "Contact Us", href: "/contact" },
-  { name: "Privacy Policy", href: "/privacy" },
-  { name: "Terms of Service", href: "/terms" },
-  { name: "FAQ", href: "/faq" },
-  { name: "Careers", href: "/careers" },
-  { name: "Press Releases", href: "/press" },
-  { name: "Partnerships", href: "/partnerships" },
+  { name: "About Us", href: "/" },
+  { name: "Contact Us", href: "/" },
+  { name: "Privacy Policy", href: "/" },
+  { name: "Terms of Service", href: "/" },
+  { name: "FAQ", href: "/" },
+  { name: "Careers", href: "/" },
+  { name: "Press Releases", href: "/" },
+  { name: "Partnerships", href: "/" },
 ]
 
 const socialLinks = [
-  { name: "Facebook", icon: Facebook, href: "#" },
-  { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
+  { name: "Facebook", icon: Facebook, href: "/" },
+  { name: "Twitter", icon: Twitter, href: "/" },
+  { name: "LinkedIn", icon: Linkedin, href: "/" },
 ]
 
 export function Footer() {
