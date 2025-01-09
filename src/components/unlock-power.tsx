@@ -19,12 +19,12 @@ export function UnlockPower() {
   }
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <motion.div 
         className="absolute inset-0 z-0"
         style={{ y }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#f8fafb] to-[#e8eef3] opacity-50" />
+        <div className="absolute inset-0 opacity-50" />
       </motion.div>
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         <ScrollAnimation>
